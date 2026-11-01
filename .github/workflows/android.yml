@@ -32,7 +32,7 @@ jobs:
           "$SDKMANAGER" --install "platforms;android-35" "build-tools;35.0.0"
 
       - name: Extract project
-        run: unzip -q DETOX_LOUD_1_00_Android_Project.zip
+        run: unzip -q DETOX_LOUD_1_00_Fixed_Project.zip
 
       - name: Build APK
         run: gradle -p DETOX_LOUD_1_00_Android assembleDebug
